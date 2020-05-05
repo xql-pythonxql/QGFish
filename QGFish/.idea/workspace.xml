@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="QGFish:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5748584-a493-466e-99e6-6845f33b5421" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1bGQJzs87vyFf1ZfWVEz18NKeoe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="gdut.QG.QGFish.dao.impl" />
+      <recent name="gdut.QG.QGFish.service.impl" />
+      <recent name="gdut.QG.QGFish.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaCode\QGFish\web\WEB-INF\lib" />
+      <recent name="D:\JavaCode\QGFish\web\img" />
+      <recent name="D:\JavaCode\QGFish\src" />
+      <recent name="D:\JavaCode\QGFish\web" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ManagerDaoTest">
+    <configuration name="GoodDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gdut.QG.QGFish.test.GoodDaoTest" />
+      <module name="QGFish" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gdut.QG.QGFish.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gdut.QG.QGFish.test.ManagerDaoTest" />
+      <module name="QGFish" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gdut.QG.QGFish.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gdut.QG.QGFish.test.UserDaoTest" />
+      <module name="QGFish" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gdut.QG.QGFish.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <deployment>
+        <artifact name="QGFish:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/QGFish" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_31_QGFish" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53069" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="QGFish:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ManagerDaoTest" />
+        <item itemvalue="Application.UserDaoTest" />
+        <item itemvalue="Application.GoodDaoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.21106558" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5748584-a493-466e-99e6-6845f33b5421" name="Default Changelist" comment="" />
+      <created>1588255882605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588255882605</updated>
+      <workItem from="1588255884005" duration="7192000" />
+      <workItem from="1588305847485" duration="37416000" />
+      <workItem from="1588390609239" duration="42742000" />
+      <workItem from="1588474457329" duration="3986000" />
+      <workItem from="1588558242681" duration="44452000" />
+      <workItem from="1588642854515" duration="9116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588401320488">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588401320488" />
+    <state x="509" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588256013455">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="509" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1588256013455" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1588647187330">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588647187330" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588585585633">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588585585633" />
+    <state x="523" y="127" key="DetectedRootsChooserDialog" timestamp="1588325695717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="127" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1588325695717" />
+    <state width="1154" height="186" key="GridCell.Tab.0.bottom" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.0.center" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.0.left" timestamp="1588609790305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588609790305" />
+    <state width="1154" height="186" key="GridCell.Tab.0.right" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.1.bottom" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.1.center" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.1.left" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.1.right" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.2.bottom" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.2.center" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.2.left" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="186" key="GridCell.Tab.2.right" timestamp="1588609790306">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="186" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1588609790306" />
+    <state width="1154" height="217" key="GridCell.Tab.3.bottom" timestamp="1588403571968">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="217" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588403571968" />
+    <state width="1154" height="217" key="GridCell.Tab.3.center" timestamp="1588403571968">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="217" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1588403571968" />
+    <state width="1154" height="217" key="GridCell.Tab.3.left" timestamp="1588403571968">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="217" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1588403571968" />
+    <state width="1154" height="217" key="GridCell.Tab.3.right" timestamp="1588403571968">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1154" height="217" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1588403571968" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1588341737209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588341737209" />
+    <state x="485" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588561601620">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1588561601620" />
+    <state x="511" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1588333526391">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="30" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1588333526391" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588596803773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588596803773" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588602496972">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588602496972" />
+  </component>
+</project>

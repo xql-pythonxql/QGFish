@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+        body{
+            background: url("img/catGirl.jpg") no-repeat;
+            background-size: cover;
+        }
+        .all{
+            border: grey 5px solid;
+            width: 700px;
+            height: 450px;
+            margin-top: 120px;
+            margin-left: 200px;
+            background: rgba(255,255,255,0.8);
+        }
+        .all_head{
+            width: 650px;
+            height: 70px;
+            box-sizing: border-box;
+            padding-top: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+            border-bottom: cornflowerblue 3px solid;
+        }
+        .all_head_1{
+            color: cornflowerblue;
+            font-size: 35px;
+            float: left;
+        }
+        .all_head_2{
+            color: grey;
+            float: left;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 25px;
+        }
+        .all_body{
+            width: 650px;
+            height: 280px;
+            box-sizing: border-box;
+            padding-left: 120px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        table{
+            border-spacing: 10px;
+        }
+        #username,#password1,#password2,#CheckCode,#email {
+            font-size: 25px;
+            text-align: right;
+        }
+        #usernameInput,#passwordInput1,#passwordInput2,#emailInput{
+            padding-left: 5px;
+            background-color: transparent;
+            width: 200px;
+            height: 25px;
+        }
+        #checkCodeInput{
+            padding-left: 5px;
+            background-color: transparent;
+            width: 100px;
+            height: 25px;
+        }
+        #td_btn{
+            text-align: center;
+        }
+        #btn{
+            width: 100px;
+        }
+        .all_foot{
+            width: 650px;
+            height: 40px;
+            box-sizing: border-box;
+            margin-left: 20px;
+        }
+        .all_foot_a{
+            color: pink;
+            float: right;
+            font-size: 15px;
+        }
+        .all_foot_1{
+            color: grey;
+            float: right;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="all_head">
+        <div class="all_head_1">注册</div>
+        <div class="all_head_2">register</div>
+    </div>
+    <div class="all_body">
+        <form action="/QGFish/registerServlet" method="post" id="form" onsubmit="return registerSubmitCheck()">
+            <table>
+                <tr>
+                    <td id="username">账号</td>
+                    <td><input id="usernameInput" type="text" placeholder="只能包含3~16个字母或数字" name="username" onblur="uBlur(this)"></td>
+                    <td><img id="1" width="30px" height="30px"></td>
+                </tr>
+                <tr>
+                    <td id="password1">密码</td>
+                    <td><input id="passwordInput1" type="password" placeholder="只能包含3~16个字母或数字" name="password" onblur="pBlur1(this)"></td>
+                    <td><img id="2" width="30px" height="30px"></td>
+                </tr>
+                <tr>
+                    <td id="password2">确认密码</td>
+                    <td><input id="passwordInput2" type="password" placeholder="只能包含3~16个字母或数字" onblur="pBlur2(this)"></td>
+                    <td><img id="3" width="30px" height="30px"></td>
+                </tr>
+                <tr>
+                    <td id="email">邮箱</td>
+                    <td><input id="emailInput" type="text" name="email" onblur="eBlur(this)"></td>
+                    <td><img id="4" width="30px" height="30px"></td>
+                </tr>
+                <tr>
+                    <td id="CheckCode">验证码</td>
+                    <td>
+                        <input type="text" id="checkCodeInput" name="checkCode">
+                        <img src="" id="img_checkCode">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td_btn" colspan="2"><input id="btn" type="submit" value="注册"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="all_foot">
+        <a id="a" class="all_foot_a">立即登录！</a>
+        <div class="all_foot_1">已有账号？</div>
+    </div>
+</div>
+</body>
+<script>
+    var a = document.getElementById("a");//登录链接
+    a.href = "${pageContext.request.contextPath}/login.html";
+
+    //正确与否
+    var usernameStatus = false;
+    var passwordStatus1 = false;
+    var passwordStatus2 = false;
+    var emailStatus = false;
+
+    var size = /^\w{3,16}$/;
+    var reg = /^[a-zA-Z0-9]+$/;
+    function uBlur(obj) {
+        var text = obj.value;
+        var img = document.getElementById("1");
+        if (reg.test(text) && size.test(text)) {
+            img.src = "img/right.jpg";
+            usernameStatus = true;
+        } else {
+            img.src = "img/error.jpg";
+            usernameStatus = false;
+        }
+    }
+    function pBlur1(obj) {
+        var text = obj.value;
+        var img = document.getElementById("2");
+        if (reg.test(text) && size.test(text)) {
+            img.src = "img/right.jpg";
+            passwordStatus1 = true;
+        } else {
+            img.src = "img/error.jpg";
+            passwordStatus1 = false;
+        }
+    }
+    function pBlur2(obj) {
+        var pText = document.getElementById("passwordInput1").value;
+        var img = document.getElementById("3");
+        if (pText == null || pText == '' || pText == undefined) {
+            img.src = "img/error.jpg";
+            passwordStatus2 = false;
+        } else if (pText == obj.value) {
+            img.src = "img/right.jpg";
+            passwordStatus2 = true;
+        } else {
+            img.src = "img/error.jpg";
+            passwordStatus2 = false;
+        }
+    }
+    function eBlur(obj) {
+        var text = obj.value;
+        var img = document.getElementById("4");
+        var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+        if (reg.test(text)) {
+            img.src = "img/right.jpg";
+            emailStatus = true;
+        } else {
+            img.src = "img/error.jpg";
+            emailStatus = false;
+        }
+    }
+    function registerSubmitCheck() {
+        var checkCodeInput = document.getElementById("checkCodeInput").value;
+        if (usernameStatus && passwordStatus1 && passwordStatus2 && emailStatus) {
+            return true;
+        } else {
+            window.alert("用户名或密码格式错误！");
+            return false;
+        }
+    }
+</script>
+</html>

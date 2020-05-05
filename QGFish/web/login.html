@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        body{
+            background: url("img/catGirl.jpg") no-repeat;
+            background-size: cover;
+        }
+        .all{
+            border: grey 5px solid;
+            width: 500px;
+            height: 300px;
+            margin-top: 200px;
+            margin-left: 300px;
+            background: rgba(255,255,255,0.8);
+        }
+        .all_head{
+            width: 450px;
+            height: 70px;
+            box-sizing: border-box;
+            padding-top: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+            border-bottom: cornflowerblue 3px solid;
+        }
+        .all_head_1{
+            color: cornflowerblue;
+            font-size: 35px;
+            float: left;
+        }
+        .all_head_2{
+            color: grey;
+            float: left;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 25px;
+        }
+        .all_body{
+            width: 450px;
+            height: 180px;
+            box-sizing: border-box;
+            padding-left: 50px;
+            margin-left: 20px;
+
+        //border: black solid 5px;
+        }
+        table{
+            border-spacing: 10px;
+        }
+        .font1{
+            font-size: 15px;
+            text-align: center;
+        }
+        .font2{
+            font-size: 25px;
+            text-align: right;
+        }
+        .input{
+            padding-left: 5px;
+            background-color: transparent;
+            width: 200px;
+            height: 25px;
+        }
+        #td_btn{
+            text-align: center;
+        }
+        #btn{
+            width: 80px;
+        }
+        .all_foot{
+            width: 450px;
+            height: 30px;
+            box-sizing: border-box;
+            margin-left: 20px;
+
+        //border: black solid 5px;
+        }
+        .all_foot_a{
+            color: pink;
+            float: right;
+            font-size: 15px;
+        }
+        .all_foot_1{
+            color: grey;
+            float: right;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="all_head">
+        <div class="all_head_1">登录</div>
+        <div class="all_head_2">login</div>
+    </div>
+    <div class="all_body">
+        <form action = "${pageContext.request.contextPath}/loginServlet" method="post" id="form" onsubmit="return loginSubmitCheck()">
+            <table>
+                <tr>
+                    <td class="font1" colspan="3">
+                        <input type="radio" name="loginMethod" value="user" checked><strong>普通用户登录</strong>
+                        <input type="radio" name="loginMethod" value="manager"><strong>管理员登录</strong>&nbsp;&nbsp;&nbsp;
+                        <a href="home.html" style="text-decoration: none; color: blue" ><strong>游客登录</strong></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font2">账号</td>
+                    <td colspan="2"><input id="username" class="input" type="text" placeholder="请输入账号" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="font2">密码</td>
+                    <td colspan="2"><input id="password" class="input" type="password" placeholder="请输入密码" name="password"></td>
+                </tr>
+                <tr>
+                    <td id="td_btn" colspan="3"><input id="btn" type="submit" value="登录"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="all_foot">
+        <a id="a_register" class="all_foot_a">立即注册！</a>
+        <div class="all_foot_1">没有账号？</div>
+    </div>
+</div>
+</body>
+<script>
+    var a = document.getElementById("a_register");
+    a_register.href = "${pageContext.request.contextPath}/register.html";
+
+    function loginSubmitCheck() {
+        var uText = document.getElementById("username").value;
+        var pText = document.getElementById("password").value;
+        if (uText == null || uText == '' || uText == undefined) {
+            window.alert("用户名不能为空！");
+            return false;
+        } else if (pText == null || pText == '' || pText == undefined) {
+            window.alert("密码不能为空！");
+            return false;
+        }
+        return true;
+    }
+</script>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+
+    <style>
+        div{
+            font-size: 20px;
+        }
+        .logo{
+            width: 500px;
+            height: 200px;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 300px;
+            float: left;
+
+        //border: black solid 5px;
+        }
+        .input{
+            background: transparent;
+            height: 30px;
+            width: 300px;
+        }
+        ul{
+            width: 350px;
+
+        //border: black solid 3px;
+        }
+        li{
+            list-style: none;
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .goods{
+            margin-top: 20px;
+            margin-left: 200px;
+            width: 800px;
+            float: left;
+
+        //border: black solid 5px;
+        }
+        .goods_body{
+            margin-top: 20px;
+            height: 500px;
+        }
+        .img_good,.img_icon{
+            width: 150px;
+            height: 150px;
+        }
+        .img_icon{
+            width: 100px;
+            height: 100px;
+        }
+        .userInfo{
+            border: black solid 5px;
+            width: 400px;
+            height: 400px;
+            float: right;
+        }
+        .massage{
+            border: black solid 5px;
+            width: 400px;
+            height: 400px;
+            float: right;
+        }
+        table{
+            border-spacing: 10px;
+        }
+        .table_userInfo{
+            margin-left: 50px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="logo">
+    <div style="float: left">
+        <img src="img/zidao.jpg" width="150px" height="150px">
+    </div>
+    <div style="float: left">
+        <h1>QG闲鱼</h1>
+    </div>
+</div>
+<div class="userInfo">
+    <div>
+        <div>
+            <img src="${user.icon}" class="img_icon">
+        </div>
+        <div>
+            <div>
+                <div>用户名</div>
+                <div>${user.name}</div>
+            </div>
+            <div>
+                <div>账号</div>
+                <div>${user.username}</div>
+            </div>
+            <div>
+                <div>邮箱</div>
+                <div>${user.email}</div>
+            </div>
+            <div>
+                <div>余额</div>
+                <div>${user.balance}</div>
+            </div>
+        </div>
+        <div>
+            <a href="/userServlet">修改信息</a>
+            <a href="/userServlet">更换头像</a>
+        </div>
+    </div>
+    <div>
+        <a href="#">订单管理</a>
+        <a href="#">设置商品</a>
+        <a href="#">购物车</a>
+    </div>
+</div>
+<div class="goods">
+    <div class="goods_select">
+        <form action="${pageContext.request.contextPath}/homeSelectServlet" method="get">
+            <input type="text" placeholder="输入关键字" class="input" name="name" value="${condition.name[0]}">&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="order">
+                <option value="price" <c:if test="${'price' eq condition.order[0]}"> selected  </c:if> >价格</option>
+                <option value="bought" <c:if test="${'bought' eq condition.order[0]}"> selected </c:if> >购买人数</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="orderValue">
+                <option value="asc" <c:if test="${'asc' eq condition.orderValue[0]}"> selected </c:if> >升序</option>
+                <option value="desc" <c:if test="${'desc' eq condition.orderValue[0]}"> selected </c:if> >降序</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="查询">
+        </form>
+    </div>
+    <div class="goods_body">
+        <table>
+            <c:forEach items="${goods}" var="good" varStatus="s">
+                <tr>
+                    <td>
+                        <img src="${good.img[0]}" class="img_good">
+                    </td>
+                    <td>
+                        <ul>
+                            <li>名称：<a href="#">${good.name}</a></li>
+                            <li>描述：<a href="#">${good.massage}</a></li>
+                            <li>价格：<a>${good.price}</a></li>
+                            <li>剩余数目：<a>${good.count}</a></li>
+                            <li>购买人数：<a>${good.bought}</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </c:forEach>
+        </table>
+    </div>
+
+
+</div>
+<div class="massage">
+    <table>
+        <th><td><h3>消息</h3></td></th>
+        <tr><td><ul><li><a>xxx想要购买你的xxx</a></li></ul></td></tr>
+        <tr><td><ul><li><a>xxx想要购买你的xxx</a></li></ul></td></tr>
+        <tr><td><ul><li><a>xxx想要购买你的xxx</a></li></ul></td></tr>
+    </table>
+</div>
+</body>
+<script>
+
+</script>
+</html>
